@@ -15,33 +15,12 @@
         "pulseaudio",
         "network",
         "bluetooth",
-        // "cpu",
-        // "memory",
-        // "temperature",
         "battery",
         "backlight/slider",
         "backlight",
         "clock",
         "custom/power"
-        // "tray",
     ],
-    // Modules configuration
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "bluetooth": {
         "on-click": "blueman-manager",
         "format": " {status}",
@@ -134,7 +113,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} {bandwidthDownBytes} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
