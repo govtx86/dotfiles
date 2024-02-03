@@ -66,6 +66,8 @@ makepkg -si
 
 ```
 sudo pacman -S polkit-kde-agent dunst waybar hyprpaper firefox uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl otf-font-awesome pavucontrol
+
+yay -S xdg-desktop-portal-hyprland-git
 ```
 
 Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
