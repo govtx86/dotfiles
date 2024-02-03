@@ -1,0 +1,48 @@
+* {
+	background-image: none;
+}
+window {
+	background-color: rgba(12, 12, 12, 0.8);
+}
+button {
+    color: #000000;
+	font-weight: 700;
+	font-family: 'NotoSans NF';
+	background-color: whitesmoke;
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 2px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	min-height: 150px;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #5ef18a;
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/home/govind/.config/wlogout/icons/lock.png"), url("/home/govind/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/govind/.config/wlogout/icons/logout.png"), url("/home/govind/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/home/govind/.config/wlogout/icons/suspend.png"), url("/home/govind/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/home/govind/.config/wlogout/icons/hibernate.png"), url("/home/govind/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/govind/.config/wlogout/icons/shutdown.png"), url("/home/govind/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/govind/.config/wlogout/icons/reboot.png"), url("/home/govind/.config/wlogout/icons/reboot.png"));
+}
