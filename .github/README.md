@@ -48,7 +48,9 @@ config config --local status.showUntrackedFiles no
 
 ### Hyprland
 ```
-sudo pacman -S hyprland kitty nemo rofi neovim
+sudo pacman -S hyprland kitty nemo rofi neovim ly
+
+sudo systemctl enable ly.service
 ```
 
 The configs are in *.config/hpyr/hyprland.conf*
@@ -65,9 +67,9 @@ makepkg -si
 ### Essential Programs
 
 ```
-sudo pacman -S polkit-kde-agent dunst waybar hyprpaper firefox uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl otf-font-awesome pavucontrol
+sudo pacman -S polkit-kde-agent dunst waybar hyprpaper firefox uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl otf-font-awesome pavucontrol brightnessctl
 
-yay -S xdg-desktop-portal-hyprland-git
+yay -S xdg-desktop-portal-hyprland-git ttf-firacode-nerd
 ```
 
 Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
