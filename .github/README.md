@@ -82,7 +82,10 @@ yay -S ttf-firacode-nerd uxplay wlogout
 
 ### Additional Programs
 ```
-sudo pacman -S htop neofetch cava
+sudo pacman -S htop neofetch
+```
+```
+yay -S cava
 ```
 
 Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
