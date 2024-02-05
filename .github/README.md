@@ -163,8 +163,8 @@ systemctl enable lidbehaviour_override.service
 
 ### Git setup
 ```
-git config --global user.name "govind"
-git config --global user.email "govindsanal08@gmail.com"
+git config --global user.name "username"
+git config --global user.email "email"
 git config --global init.defaultBranch main
 ```
 Github auth
