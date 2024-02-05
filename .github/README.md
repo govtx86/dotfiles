@@ -2,6 +2,14 @@
 
 This is the readme file for my dotfiles repo
 
+## Update Mirrors
+
+```
+sudo pacman -S reflector
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+```
+
 ## ZSH setup
 
 Install zsh
@@ -48,7 +56,7 @@ config config --local status.showUntrackedFiles no
 
 ### Hyprland
 ```
-sudo pacman -S hyprland kitty nemo rofi neovim ly
+sudo pacman -S hyprland base-devel kitty nemo rofi neovim ly
 
 sudo systemctl enable ly.service
 ```
@@ -67,9 +75,14 @@ makepkg -si
 ### Essential Programs
 
 ```
-sudo pacman -S polkit-kde-agent dunst waybar hyprpaper firefox uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl otf-font-awesome pavucontrol brightnessctl
+sudo pacman -S polkit-kde-agent dunst waybar hyprpaper uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl pavucontrol brightnessctl
 
 yay -S xdg-desktop-portal-hyprland-git ttf-firacode-nerd
+```
+
+### Additional Programs
+```
+sudo pacman -S firefox htop neofetch cava
 ```
 
 Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
@@ -137,4 +150,16 @@ Run/enable the service
 sudo systemctl daemon-reload
 systemctl start lidbehaviour_override.service
 systemctl enable lidbehaviour_override.service
+```
+
+### Git setup
+```
+git config --global user.name "govind"
+git config --global user.email "govindsanal08@gmail.com"
+git config --global init.defaultBranch main
+```
+Github auth
+```
+sudo pacman -S github-cli
+gh auth login
 ```
