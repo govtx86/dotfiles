@@ -56,7 +56,7 @@ config config --local status.showUntrackedFiles no
 
 ### Hyprland
 ```
-sudo pacman -S hyprland base-devel kitty nemo rofi neovim ly
+sudo pacman -S hyprland base-devel kitty nemo rofi neovim ly firefox
 
 sudo systemctl enable ly.service
 ```
@@ -82,7 +82,7 @@ yay -S xdg-desktop-portal-hyprland-git ttf-firacode-nerd
 
 ### Additional Programs
 ```
-sudo pacman -S firefox htop neofetch cava
+sudo pacman -S htop neofetch cava
 ```
 
 Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
