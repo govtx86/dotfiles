@@ -145,7 +145,7 @@ WantedBy=multi-user.target
 
 Give the file execution permission
 ```
-sudo chdmod a+x lidbehaviour_override.service
+sudo chmod a+x lidbehaviour_override.service
 ```
 
 Run/enable the service
