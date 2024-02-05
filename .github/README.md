@@ -4,8 +4,8 @@ This is the readme file for my dotfiles repo
 
 ## Screenshots
 
-![Wallpaper 1](/screenshots/keanuwp.png)
-![Wallpaper 2](/screenshots/robotwp.png)
+![Wallpaper 1](screenshots/keanuwp.png)
+![Wallpaper 2](screenshots/robotwp.png)
 
 ## Update Mirrors
 
