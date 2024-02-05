@@ -75,9 +75,9 @@ makepkg -si
 ### Essential Programs
 
 ```
-sudo pacman -S polkit-kde-agent dunst waybar hyprpaper uxplay gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist wlogout grim slurp swaylock playerctl pavucontrol brightnessctl
+sudo pacman -S polkit-kde-agent dunst waybar hyprpaper gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist grim slurp swaylock playerctl pavucontrol brightnessctl
 
-yay -S xdg-desktop-portal-hyprland-git ttf-firacode-nerd
+yay -S xdg-desktop-portal-hyprland-git ttf-firacode-nerd uxplay wlogout
 ```
 
 ### Additional Programs
