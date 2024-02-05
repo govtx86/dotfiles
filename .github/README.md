@@ -6,7 +6,11 @@ This is the readme file for my dotfiles repo
 
 ```
 sudo pacman -S reflector
+```
+```
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+```
+```
 sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
@@ -47,7 +51,8 @@ echo "alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'"
 Apply the dotfiles
 ```
 dot checkout -f
-
+```
+```
 dot config --local status.showUntrackedFiles no
 ```
 
@@ -57,7 +62,8 @@ dot config --local status.showUntrackedFiles no
 ### Hyprland
 ```
 sudo pacman -S hyprland base-devel kitty nemo rofi neovim ly firefox
-
+```
+```
 sudo systemctl enable ly.service
 ```
 
@@ -76,8 +82,9 @@ makepkg -si
 
 ```
 sudo pacman -S polkit-kde-agent xdg-desktop-portal-hyprland dunst waybar hyprpaper gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist grim slurp swaylock playerctl pavucontrol brightnessctl
-
-yay -S ttf-firacode-nerd uxplay wlogout
+```
+```
+yay -S ttf-firacode-nerd otf-font-awesome uxplay wlogout
 ```
 
 ### Additional Programs
@@ -98,8 +105,7 @@ sudo systemctl enable avahi-daemon
 
 Set gtk dark theme
 ```
-yay -S adwaita-dark
-yay -S numix-icon-theme-git
+yay -S adwaita-qt5-git numix-icon-theme-git
 gsettings set org.gnome.desktop.wm.preferences theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Numix"
