@@ -42,13 +42,13 @@ git clone --bare https://github.com/govtx86/dotfiles.git $HOME/.dotfiles
 ```
 Add the alias (in zsh shell)
 ```
-echo "alias dotfile='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'" >> ~/.zshrc
+echo "alias dot='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'" >> ~/.zshrc
 ```
 Apply the dotfiles
 ```
-config checkout -f
+dot checkout -f
 
-config config --local status.showUntrackedFiles no
+dot config --local status.showUntrackedFiles no
 ```
 
 
