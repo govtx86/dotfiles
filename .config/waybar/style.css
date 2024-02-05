@@ -39,10 +39,6 @@ window#waybar.empty #window {
     background-color: #eb4d4b;
 }
 
-#window {
-    color: #8ec07c;
-}
-
 #clock,
 #battery,
 #backlight,
@@ -68,38 +64,22 @@ window#waybar.empty #window {
     margin-right: 0;
 }
 
-#clock {
-    color: #fabd2f;
-}
-
-#pulseaudio {
+#window,
+#pulseaudio,
+#bluetooth,
+#backlight
+{
     color: #00db75;
 }
 
-#network {
-    color: #ff7b00;
+#clock,
+#network,
+#battery,
+#custom-power
+{
+    color: #fabd2f;
 }
 
-#bluetooth {
-    color: #79e3e9;
-}
-
-#battery {
-    color: rgb(255, 147, 165);
-}
-
-#backlight {
-    color: #e7e979;
-}
-
-#custom-power {
-    color: #fb4934;
-}
-
-#battery.charging,
-#battery.plugged {
-    color: #26A65B;
-}
 
 @keyframes blink {
     to {
