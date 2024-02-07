@@ -110,7 +110,7 @@ sudo systemctl enable avahi-daemon
 
 Set gtk dark theme
 ```
-yay -S adwaita-qt5-git numix-icon-theme-git
+yay -S gnome-themes-extra adwaita-qt5-git numix-icon-theme-git
 gsettings set org.gnome.desktop.wm.preferences theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Numix"
