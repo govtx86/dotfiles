@@ -66,10 +66,11 @@ dot config --local status.showUntrackedFiles no
 
 ### Hyprland
 ```
-sudo pacman -S hyprland base-devel kitty nemo rofi neovim ly firefox
+sudo pacman -S hyprland base-devel kitty nemo rofi neovim firefox
+yay -S sddm-git
 ```
 ```
-sudo systemctl enable ly.service
+sudo systemctl enable sddm.service
 ```
 
 The configs are in *.config/hpyr/hyprland.conf*
