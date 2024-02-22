@@ -2,7 +2,7 @@
 
 # For SDL width and space between bars is in pixels, defaults are:
  bar_width = 15
- bar_spacing = 4
+ bar_spacing = 2
 
 [input]
 
