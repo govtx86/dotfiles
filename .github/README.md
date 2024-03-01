@@ -4,8 +4,7 @@ This is the readme file for my dotfiles repo
 
 ## Screenshots
 
-![Wallpaper 1](screenshots/keanuwp.png)
-![Wallpaper 2](screenshots/robotwp.png)
+![Wallpaper 1](screenshots/ss.png)
 
 ## Update Mirrors
 
@@ -32,7 +31,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 Configs are in *.zshrc*
 
-To use custom prompt
+####To use custom prompt
+
+#####Ubunly theme
 ```
 git clone https://github.com/alejandromume/ubunly-zsh-theme.git
 cd ubunly-zsh-theme
@@ -41,6 +42,11 @@ source INSTALL.sh
 Change the prompt in *https://github.com/alejandromume/ubunly-zsh-theme.git* to:
 ```
 PROMPT=$'%F{%(#..red)}┌──${debian_chroot:+($debian_chroot)──}(%B%F{%(#..cyan)}%n%(#..@)%m%b%F{%(#..red)})-[%B%F{green}%(6~.%-1~/…/%4~.%5~)%b%F{%(#..red)}]\n└─%B%(#.%F{yellow}#.%F{yellow}$)%b%F{reset} '
+```
+
+#####Powerlevel10k theme
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 Finally restart zsh
 ## How to replicate the dotfile in new system
@@ -67,10 +73,6 @@ dot config --local status.showUntrackedFiles no
 ### Hyprland
 ```
 sudo pacman -S hyprland base-devel kitty nemo rofi neovim firefox
-yay -S sddm-git
-```
-```
-sudo systemctl enable sddm.service
 ```
 
 The configs are in *.config/hpyr/hyprland.conf*
@@ -90,7 +92,7 @@ makepkg -si
 sudo pacman -S polkit-kde-agent xdg-desktop-portal-hyprland dunst waybar hyprpaper gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist grim slurp swaylock playerctl pavucontrol brightnessctl
 ```
 ```
-yay -S ttf-firacode-nerd otf-font-awesome uxplay wlogout
+yay -S ttf-firacode-nerd otf-font-awesome uxplay
 ```
 
 ### Additional Programs
@@ -100,8 +102,6 @@ sudo pacman -S htop neofetch
 ```
 yay -S cava
 ```
-
-Make sure to change the path to wallpaper in *.config/hypr/hyprpaper.conf*
 
 For uxplay, start avahi daemon
 ```
