@@ -106,6 +106,6 @@
     "custom/power": {
         "format": "⏻ ",
         "tooltip": false,
-        "on-click": "powermenu"
+        "on-click": "rofi -show power-menu -modi 'power-menu:~/.local/bin/rofi-power-menu --choices=lockscreen/logout/shutdown/reboot/' -theme-str 'window {width: 10em;} listview {lines: 4;}'"
     }
 }

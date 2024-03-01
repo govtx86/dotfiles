@@ -9,7 +9,7 @@
 # Use command 'pactl list sources | grep "monitor"' to get source
 
 method = pipewire
-source = alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
+source = alsa_output.pci-0000_00_1f.3.analog-stereo
 
 [output]
 
