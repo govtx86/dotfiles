@@ -27,24 +27,13 @@ sudo pacman -S zsh
 Install oh-my-zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
 Configs are in *.zshrc*
 
-####To use custom prompt
-
-#####Ubunly theme
-```
-git clone https://github.com/alejandromume/ubunly-zsh-theme.git
-cd ubunly-zsh-theme
-source INSTALL.sh
-```
-Change the prompt in *https://github.com/alejandromume/ubunly-zsh-theme.git* to:
-```
-PROMPT=$'%F{%(#..red)}┌──${debian_chroot:+($debian_chroot)──}(%B%F{%(#..cyan)}%n%(#..@)%m%b%F{%(#..red)})-[%B%F{green}%(6~.%-1~/…/%4~.%5~)%b%F{%(#..red)}]\n└─%B%(#.%F{yellow}#.%F{yellow}$)%b%F{reset} '
-```
-
-#####Powerlevel10k theme
+#### To use custom prompt
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
@@ -89,10 +78,10 @@ makepkg -si
 ### Essential Programs
 
 ```
-sudo pacman -S polkit-kde-agent xdg-desktop-portal-hyprland dunst waybar hyprpaper gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist grim slurp swaylock playerctl pavucontrol brightnessctl
+sudo pacman -S polkit-kde-agent xdg-desktop-portal-hyprland dunst waybar hyprpaper gst-plugins-good gst-plugins-bad gst-libav gstreamer-vaapi cliphist grim slurp swaylock playerctl pavucontrol brightnessctl ttf-firacode-nerd
 ```
 ```
-yay -S ttf-firacode-nerd otf-font-awesome uxplay
+yay -S otf-font-awesome uxplay
 ```
 
 ### Additional Programs
