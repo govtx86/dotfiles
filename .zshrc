@@ -21,6 +21,7 @@ else
     ZSH_THEME="powerlevel10k/powerlevel10k"
 fi
 
+export PATH=$PATH:/home/govind/bin/
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
