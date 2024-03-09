@@ -28,8 +28,8 @@
         "on-click": "blueman-manager",
         "format": " {status}",
         "format-connected": " Connected",
-        "tooltip-format": "{controller_alias}   \n\n{num_connections} connected",
-        "tooltip-format-connected": "{controller_alias}  \n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format": "{num_connections} connected",
+        "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}   {device_battery_percentage}%"
     },
