@@ -25,8 +25,9 @@
 		"max-length": 50
 	},
     "bluetooth": {
-        "on-click": "blueman-manager",
+        "on-click-right": "blueman-manager",
         "format": " {status}",
+        "format-alt": "",
         "format-connected": " Connected",
         "tooltip-format": "{num_connections} connected",
         "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
@@ -64,7 +65,7 @@
         "format": "{icon} {capacity}%",
         "format-charging": "  {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "{icon}{time}",
+        "format-alt": "{icon}",
         "format-icons": [
             " ",
             " ",
