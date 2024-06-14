@@ -20,6 +20,7 @@ ZSH_THEME="clean"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export PATH=$PATH:/home/govind/bin/
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,3 +123,8 @@ alias dot='/usr/bin/git --git-dir=/home/govind/.dotfiles/ --work-tree=/home/govi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH=$PATH:/home/govind/.spicetify
