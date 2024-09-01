@@ -42,7 +42,7 @@ Finally restart zsh
 
 Clone the repo
 ```
-git clone --bare https://github.com/govtx86/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/govtx86/hyprland-dotfiles.git $HOME/.dotfiles
 ```
 Add the alias (in zsh shell)
 ```
