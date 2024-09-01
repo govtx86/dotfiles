@@ -61,7 +61,7 @@ dot config --local status.showUntrackedFiles no
 
 ### Hyprland
 ```
-sudo pacman -S hyprland base-devel kitty nemo rofi neovim firefox
+sudo pacman -S hyprland base-devel kitty nemo rofi-wayland neovim firefox
 ```
 
 The configs are in *.config/hpyr/hyprland.conf*
