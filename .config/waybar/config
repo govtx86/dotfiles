@@ -21,7 +21,7 @@
         "custom/power"
     ],
     "hyprland/window": {
-		"format": " >> {}",
+		"format": "   >> {}",
 		"max-length": 50
 	},
     "bluetooth": {
@@ -36,7 +36,7 @@
     },
     "clock": {
 	"interval": 1,
-        "format": " {:%I:%M:%S %p - 󰃭 %d/%m}",
+        "format": "   {:%I:%M:%S %p - 󰃭 %d/%m}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
 		"mode": "month",
@@ -47,7 +47,7 @@
 
     },
     "backlight": {
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         "on-scroll-up": "",
         "on-scroll-down": "",
         "format-icons": [
@@ -62,9 +62,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "{icon}  {capacity}%",
+        "format-charging": "   {capacity}%",
+        "format-plugged": "  {capacity}%",
         "format-alt": "{icon}",
         "format-icons": [
             " ",
@@ -76,11 +76,11 @@
     },
     "network": {
 	    "interval": 1,
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} @ {ipaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "⚠ Disconnected",
+        "format-wifi": "   {essid} ({signalStrength}%)",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "tooltip-format": " {ifname} @ {ipaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "⚠  Disconnected",
         "format-alt": "{bandwidthDownBytes}"
     },
     "pulseaudio": {
